@@ -1,51 +1,50 @@
 <!DOCTYPE html>
-<!-- CSS Stylesheets with Relative Paths -->
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>latitude</title>
-
-  <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
-  <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
+    <div class="container">
+        <header>
+            <h2 class="title-letter">Latitude</h2>
+            <ul class="options">
+                <li><a href="#">Plots &#x25BC;</a>
+                    <ul>
+                        <li><a href="#">Max Temprature</a></li>
+                        <li><a href="#">Humidity</a></li>
+                        <li><a href="#">Cloudiness</a></li>
+                        <li><a href="#">Windspeed</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Comparison </a></li>
+                <li><a href="#">Data</a></li>
+            </ul>
+        </header>
+    </div>
 
-  <header>
-    <h1>Latitude</h1>
-  </header>
+    <div class="summary">
+        <h1>Summary: Latitude vs. X </h1>
+        <br>
+        <hr/>
+        <img src="/images/temperaturemap.png" alt="tempmap">
+        <p>
+            The purpose of this project was to analyz how weather changes
+            as you get closer to the equator. To accomplish this analysis, we 
+            first pulled data fro mthe OpenWeatherMap API to assemble a 
+            dataset on over 500 cities
+            <br>
+            After assembling the dataset, we used Matplotlib to plot various 
+            aspects of the weather vs. Laitude. Factors we looked at inlcluded:
+            temtrature, cloudiness, wind speed, and humidity. This site provides the source data 
+            and visualizations created as part of the analysis, as well as explanations and descriptions of 
+            any trends and correlations witnessed. 
+    </div>
 
-  <main class="container">
-    <section id="main-bio">
-      <section id="figure">
-        <img id="bio-image" src="assets/images/temperaturemap.png" alt="Tempurature Map">
-      </section>
-      <h2>Summary: Latitude vs. X</h2>
-      <p> The purpose of this project was to analyze how weather 
-          changes as you get closer to the equator. To accomplish this analysis,
-          we first pulled data from the OpenWeatherMap API to assemple a dataset
-          on over 500 cities.
-    
-    
-          After assembling the dataset, we used Matplotlib to plot various aspects of 
-          the weather vs. latitude. Factors we looked at included: temprature, cloudiness, wind speed,
-          and humpdity. This side provides the source data and visualiztions created as part 
-          of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-        </p>
-    </section>
 
-    <aside id="contact-info">
-      <h2>Visualizations</h2>
-      <ul>
-        <img id = "contact-info" src="assets/images/humiditymap.png" alt="Humidity Map">
-        <img id = "contact-info" src="assets/images/temperaturemap.png" alt="Tempurature Map">
-        <img id = "contact-info" src="assets/images/cloudymap.png" alt="Cloudy Map">
-
-      </ul>
-    </aside>
-  </main>
 
 </body>
-
 </html>
