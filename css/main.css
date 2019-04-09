@@ -106,3 +106,7 @@ hr {
 .visuals {
   background: white;
 }
+
+td, th {
+  border: solid 1px black;
+  } 
